@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My To Do List</title>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1> <i class="fa-solid fa-check-circle"></i>     
+             My Task</h1>
+             <p id ="date">date is</p>
+        </header>
+
+     <div class ="todo-input">
+        <input type ="text" id="task-input" placeholder="Please enter your next task">
+        <button id ="add-task">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+     </div>
+
+     <div class ="filters">
+        <span class = "filter active" data-filter ="all">All</span>
+        <span class = "filter" data-filter ="active">Active</span>
+        <span class = "filter" data-filter ="completed">Completed</span>
+     </div>
+
+     <div class="todos-container">
+          <ul id = "todo-list">
+            
+             <li class ="todo-item">
+                  <label class ="checkbox-container">
+                  <input type ="checkbox" class="todo-checkbox">
+                  <span class ="checkmark"></span>
+                  </label>
+                  <button class ="delete-btn"><i class="fa-solid fa-times"></i></button>
+             </li> 
+
+          </ul>
+          <div class="empty-state hidden">
+           <i class="fa-solid fa-clipboard-list"></i>
+           <p>No tasks here yet</p>
+          </div>
+     </div>
+     <footer>
+        <span id ="item-left">0 items left </span>
+        <button id="clear-completed">Clear</button>
+     </footer>
+    
+     </div>
+
+    <script src ="index.js"> </script>
+
+    
+</body>
+</html>
